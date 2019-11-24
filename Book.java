@@ -35,22 +35,17 @@ public class Book
     public Loan chekBook()
     {
         
-        return loan;
+        return Loan loan;
     }
 
     public void offConnect()
     {
-        loan = null;
+        Loan loan = null;
     }
-
-    public Book MakeBook()
-    {
-        // ?
-    }
-
+    
     public void connect(Loan laon)
     {
-        laon = this;
+        Loan laon = this;
     }
 
     public void display()
