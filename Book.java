@@ -61,7 +61,7 @@ public class Book
 
     public String toString()
     {
-        
+        return this.catalogueNumber + "," + this.title  + "," + this.author;
     }
 
     public void CheckBook(int catalogueNumber)
