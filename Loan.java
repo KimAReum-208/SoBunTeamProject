@@ -21,4 +21,12 @@ public class Loan
     public String toString(){
         
     }
+    
+    public void connect(Book book,Borrower borrower){
+        
+    }
+    
+    public void offConnect(Book book,Borrower borrower){
+        
+    }
 }
