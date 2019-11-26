@@ -18,7 +18,7 @@ public class Library
         {
             Book book = new Book(catalogueNumber, title, author);
             boolean result = registeredBook.add(book);
-            if (result == true)
+            if (result)
             {
                 System.out.println("등록되었습니다.");
             }
