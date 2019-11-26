@@ -14,7 +14,19 @@ public class Library
     }
     
     public void RegisterOneBook(String name){
-        
+        if( CheckBook(catalogueNumber))
+        {
+            Book book = new Book(catalogueNumber, title, author);
+            boolean result = registeredBook.add(book);
+            if (result)
+            {
+                System.out.println("등록되었습니다.");
+            }
+            else 
+            {
+                System.out.println("실패하였습니다.");
+            }
+        }
     }
     
     public void RegisterOneBorrower(String name){
