@@ -13,11 +13,13 @@ public class Book
     TreeSet tree = new TreeSet(); // 북 리스트가 담겨져있는 컬렉션
     public TreeSet<Loan> LoanInformation;
     
+    
     public Book(int catalogueNumber,String title,String author)
     {
         this.catalogueNumber = catalogueNumber;
         this.title = title;
         this.author = author;
+        LoanInformation = new TreeSet<Loan>();
     }
     
     public void add(Book book)
