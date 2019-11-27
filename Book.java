@@ -10,10 +10,9 @@ public class Book
     private static int catalogueNumber;
     private String title;
     private String author;
-    TreeSet tree = new TreeSet(); // 북 리스트가 담겨져있는 컬렉션
+    //TreeSet tree = new TreeSet(); // 북 리스트가 담겨져있는 컬렉션
     public TreeSet<Loan> LoanInformation;
-    
-    
+
     public Book(int catalogueNumber,String title,String author)
     {
         this.catalogueNumber = catalogueNumber;
@@ -21,31 +20,42 @@ public class Book
         this.author = author;
         LoanInformation = new TreeSet<Loan>();
     }
-    
+
     public void add(Book book)
     {
-        tree.add(this);
+        boolean result = LoanInformation.add(book);
     }
 
-    public Book finBook(int catalogueNumber)
+    public Book findBook(int catalogueNumber)
     {
-        if (this.catalogueNumber != catalogueNumber)
+        if (this.catalogueNumber == tree.catalogueNumber)
         {
             return this;
         }
+        else if(this.catalogueNumber == Book.catalogueNumber)
+        {
+            return this;
+        }
+        else 
+        {
+            System.out.println("등록되어있지 않는 책입니다.");
+        }
     }
 
-    public Loan chekBook()
+    public Loan checkBook()
     {
-        
-        return Loan loan;
+        if (this.catalogueNumber == this.catalogueNumber)
+        {
+            return loan;
+        }
+
     }
 
     public void offConnect()
     {
         Loan loan = null;
     }
-    
+
     public void connect(Loan laon)
     {
         Loan laon = this;
