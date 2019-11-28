@@ -25,17 +25,20 @@ public class Library
             boolean result = registeredBook.add(book);
             if (result)
             {
-                System.out.println("?벑濡앸릺?뿀?뒿?땲?떎.");
+                System.out.println("대출 성공했습니다");
             }
             else 
             {
-                System.out.println("?떎?뙣?븯???뒿?땲?떎.");
+                System.out.println("대출 실패했습니다.");
             }
         }
     }
 
     public void RegisterOneBorrower(String name){
-
+        if(chcek(name) == null){
+            newBorrower(name);
+            add(borrower);
+        }
     }
 
     public void LendOneBook(String name, int catalogueNumber){
@@ -48,12 +51,12 @@ public class Library
         }
     }
 
-    public book DisplayBooksInLoan(){
+    public book DisplayBooksOnLoan(){
         display();
     }
 
     public book DisplayBooksForLoan(){
-        return book;
+        display();
     }
 
     public String toString(){
