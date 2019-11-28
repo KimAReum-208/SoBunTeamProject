@@ -8,11 +8,16 @@
 public class Library
 {
     private String name;
-    
+
     public void ReturnOneBook(int caralogueNumber){
-        
+        if((findBook(caralogueNumber)) != null){
+            Book book = checkBook();
+            Borrower borrower = CheckBorrower();
+            if(book != null && borrower != null)
+                offConnect(book, borrower);
+        }
     }
-    
+
     public void RegisterOneBook(String name){
         if( CheckBook(catalogueNumber))
         {
@@ -20,31 +25,40 @@ public class Library
             boolean result = registeredBook.add(book);
             if (result)
             {
-                System.out.println("Îì±Î°ùÎêòÏóàÏäµÎãàÎã§.");
+                System.out.println("¥Î√‚ º∫∞¯«ﬂΩ¿¥œ¥Ÿ");
             }
             else 
             {
-                System.out.println("Ïã§Ìå®ÌïòÏòÄÏäµÎãàÎã§.");
+                System.out.println("¥Î√‚ Ω«∆–«ﬂΩ¿¥œ¥Ÿ.");
             }
         }
     }
-    
+
     public void RegisterOneBorrower(String name){
-        
+        if(chcek(name) == null){
+            newBorrower(name);
+            add(borrower);
+        }
     }
-    
+
     public void LendOneBook(String name, int catalogueNumber){
-        
+        Book book = findBook(catalogueNumber);
+        Loan checkBook = CheckBook(catalogueNumber);
+        Borrower borrower = getBorrower(name);
+        if(book != null && borrower != null){
+            newLoan(book, borrower);
+            connent(book, borrower);
+        }
     }
-    
-    public book DisplayBooksInLoan(){
-        return book;
+
+    public book DisplayBooksOnLoan(){
+        display();
     }
-    
+
     public book DisplayBooksForLoan(){
-        return book;
+        display();
     }
-    
+
     public String toString(){
         this.name = name;
     }

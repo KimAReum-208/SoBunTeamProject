@@ -23,10 +23,12 @@ public class Loan
     }
     
     public void connect(Book book,Borrower borrower){
-        
+        book.connect(this);
+        borrower.connect(this);
     }
     
     public void offConnect(Book book,Borrower borrower){
-        
+        book.offConnect(this);
+        borrower.offConnect(this);
     }
 }

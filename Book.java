@@ -1,49 +1,61 @@
 import java.util.*;
 /**
- * ì—¬ê¸°ì— Book í´ë˜ìŠ¤ ì„¤ëª…ì„ ì‘ì„±í•˜ì‹­ì‹œì˜¤.
- * 
- * @author (ì‘ì„±ì ì´ë¦„) 
- * @version (ë²„ì „ë²ˆí˜¸ë‚˜ ë‚ ì§œ)
+ * Write a description of class Library here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
  */
 public class Book
 {
     private static int catalogueNumber;
     private String title;
     private String author;
-    TreeSet tree = new TreeSet(); // ë¶ ë¦¬ìŠ¤íŠ¸ê°€ ë‹´ê²¨ì ¸ìˆëŠ” ì»¬ë ‰ì…˜
+    //TreeSet tree = new TreeSet(); // ë¶? ë¦¬ìŠ¤?Š¸ê°? ?‹´ê²¨ì ¸?ˆ?Š” ì»¬ë ‰?…˜
     public TreeSet<Loan> LoanInformation;
-    
+
     public Book(int catalogueNumber,String title,String author)
     {
         this.catalogueNumber = catalogueNumber;
         this.title = title;
         this.author = author;
-    }
-    
-    public void add(Book book)
-    {
-        tree.add(this);
+        LoanInformation = new TreeSet<Loan>();
     }
 
-    public Book finBook(int catalogueNumber)
+    public void add(Book book)
     {
-        if (this.catalogueNumber != catalogueNumber)
+        boolean result = LoanInformation.add(book);
+    }
+
+    public Book findBook(int catalogueNumber)
+    {
+        if (this.catalogueNumber == tree.catalogueNumber)
         {
             return this;
         }
+        else if(this.catalogueNumber == Book.catalogueNumber)
+        {
+            return this;
+        }
+        else 
+        {
+            System.out.println("?“±ë¡ë˜?–´?ˆì§? ?•Š?Š” ì±…ì…?‹ˆ?‹¤.");
+        }
     }
 
-    public Loan chekBook()
+    public Loan checkBook()
     {
-        
-        return Loan loan;
+        if (this.catalogueNumber == this.catalogueNumber)
+        {
+            return loan;
+        }
+
     }
 
     public void offConnect()
     {
         Loan loan = null;
     }
-    
+
     public void connect(Loan laon)
     {
         Loan laon = this;
