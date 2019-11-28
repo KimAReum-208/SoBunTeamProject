@@ -8,7 +8,7 @@ import java.util.*;
 public class Borrower
 {
     private String name;
-    Set hashSet = new HashSet();
+    Set h = new HashSet();
     public Borrower(String name){
         this.name = name;
     }
