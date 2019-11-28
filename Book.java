@@ -1,16 +1,16 @@
 import java.util.*;
 /**
- * 여기에 Book 클래스 설명을 작성하십시오.
- * 
- * @author (작성자 이름) 
- * @version (버전번호나 날짜)
+ * Write a description of class Library here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
  */
 public class Book
 {
     private static int catalogueNumber;
     private String title;
     private String author;
-    //TreeSet tree = new TreeSet(); // 북 리스트가 담겨져있는 컬렉션
+    //TreeSet tree = new TreeSet(); // �? 리스?���? ?��겨져?��?�� 컬렉?��
     public TreeSet<Loan> LoanInformation;
 
     public Book(int catalogueNumber,String title,String author)
@@ -38,7 +38,7 @@ public class Book
         }
         else 
         {
-            System.out.println("등록되어있지 않는 책입니다.");
+            System.out.println("?��록되?��?���? ?��?�� 책입?��?��.");
         }
     }
 
