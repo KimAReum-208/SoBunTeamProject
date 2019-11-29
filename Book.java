@@ -10,7 +10,7 @@ public class Book
     private static int catalogueNumber;
     private String title;
     private String author;
-    //TreeSet tree = new TreeSet(); // ë¶? ë¦¬ìŠ¤?Š¸ê°? ?‹´ê²¨ì ¸?ˆ?Š” ì»¬ë ‰?…˜
+    //TreeSet tree = new TreeSet(); // ï¿½? ë¦¬ìŠ¤?ï¿½ï¿½ï¿½? ?ï¿½ï¿½ê²¨ì ¸?ï¿½ï¿½?ï¿½ï¿½ ì»¬ë ‰?ï¿½ï¿½
     public TreeSet<Loan> LoanInformation;
 
     public Book(int catalogueNumber,String title,String author)
@@ -38,7 +38,7 @@ public class Book
         }
         else 
         {
-            System.out.println("?“±ë¡ë˜?–´?ˆì§? ?•Š?Š” ì±…ì…?‹ˆ?‹¤.");
+            System.out.println("?ï¿½ï¿½ë¡ë˜?ï¿½ï¿½?ï¿½ï¿½ï¿½? ?ï¿½ï¿½?ï¿½ï¿½ ì±…ì…?ï¿½ï¿½?ï¿½ï¿½.");
         }
     }
 
