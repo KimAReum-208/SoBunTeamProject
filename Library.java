@@ -9,8 +9,8 @@ import java.util.*;
 public class Library
 {
     private String name;
-    private HashSet User;
-    private TreeSet registeredBook;
+    private HashSet<Borrower> User;
+    private TreeSet<Book> registeredBook;
     private ArrayList<Loan> LoanInformation;
     
     public void ReturnOneBook(int catalogueNumber){

@@ -12,6 +12,13 @@ public class Loan
     private LocalDate loanDate;
     private LocalDate returnDate;
     
+    public Loan(Book book,Borrower borrower,LocalDate loanDate ,LocalDate returnDate){
+       this.book = book;
+       this.borrower = borrower;
+       this.loanDate = loanDate;
+       this.returnDate = returnDate;
+    }
+    
     public LocalDate getLoanDate(){
         return loanDate;
     }
@@ -22,7 +29,7 @@ public class Loan
     
     public String toString(){
         return this.book+ "," + this.borrower + "," + 
-               this.loanData + "," + this.returnDate;
+               this.loanDate + "," + this.returnDate;
     }
     
     public void connect(Book book,Borrower borrower){
@@ -35,10 +42,4 @@ public class Loan
         borrower.offConnect(this);
     }
     
-   public Loan(Book book,Borrower borrower,LocalDate loanDate ,LocalDate returnDate){
-       this.book = book;
-       this.borrower = borrower;
-       this.loanDate = loanDate;
-       this.returnDate = returnDate;
-    }
 }
