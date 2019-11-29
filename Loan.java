@@ -1,25 +1,28 @@
-import java.util.ArrayList;
+import java.util.*;
+import java.time.*;
 /**
- * Write a description of class Ioan here.
+ * Loan class
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (2017315002 Kim Areum , 218315021 Bang Daeho,
+ *          2018315051 Yamamoto Yoshika, 2018315003 Choi Sewon)
+ * @version (2019.11.29)
  */
 public class Loan
 {
-    private laonDate Date;
-    private returnDate Date;
+    private LocalDate loanDate;
+    private LocalDate returnDate;
     
     public LocalDate getLoanDate(){
-        
+        return loanDate;
     }
     
     public LocalDate ReturnDate(){
-        
+        return returnDate;
     }
     
     public String toString(){
-        
+        return this.book+ "," + this.borrower + "," + 
+               this.loanData + "," + this.returnDate;
     }
     
     public void connect(Book book,Borrower borrower){
@@ -32,10 +35,10 @@ public class Loan
         borrower.offConnect(this);
     }
     
-   public Loan(Book book,Borrower borrower,Data loanData ,Data returnData){
+   public Loan(Book book,Borrower borrower,LocalDate loanDate ,LocalDate returnDate){
        this.book = book;
        this.borrower = borrower;
-       this.loanData = loanData;
-       this.returnData = returnData;
+       this.loanDate = loanDate;
+       this.returnDate = returnDate;
     }
 }

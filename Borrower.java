@@ -1,6 +1,7 @@
 import java.util.*;
 /**
  * Borrower class
+ * 
  *
  * @author (2017315002 Kim Areum , 218315021 Bang Daeho,
  *          2018315051 Yamamoto Yoshika, 2018315003 Choi Sewon)
