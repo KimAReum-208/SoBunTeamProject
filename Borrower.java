@@ -13,6 +13,7 @@ public class Borrower
     
     public ArrayList<Loan> LoanInformation;
     Set Borrower = new HashSet();
+    
     public Borrower(String name){
         this.name = name;
         LoanInformation = new ArrayList<Loan>();
