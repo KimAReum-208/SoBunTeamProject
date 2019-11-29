@@ -9,8 +9,8 @@ public class Library
 {
     private String name;
 
-    public void ReturnOneBook(int caralogueNumber){
-        if((findBook(caralogueNumber)) != null){
+    public void ReturnOneBook(int catalogueNumber){
+        if((findBook(catalogueNumber)) != null){
             Book book = checkBook();
             Borrower borrower = CheckBorrower();
             if(book != null && borrower != null)
@@ -25,11 +25,11 @@ public class Library
             boolean result = registeredBook.add(book);
             if (result)
             {
-                System.out.println("´ëÃâ ¼º°øÇß½À´Ï´Ù");
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½");
             }
             else 
             {
-                System.out.println("´ëÃâ ½ÇÆÐÇß½À´Ï´Ù.");
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½.");
             }
         }
     }
