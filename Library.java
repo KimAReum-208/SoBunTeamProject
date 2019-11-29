@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Write a description of class Library here.
  *
@@ -8,7 +8,10 @@
 public class Library
 {
     private String name;
-
+    private HashSet User;
+    private TreeSet registeredBook;
+    private ArrayList<Loan> LoanInformation;
+    
     public void ReturnOneBook(int catalogueNumber){
         if((findBook(catalogueNumber)) != null){
             Book book = checkBook();
@@ -35,7 +38,7 @@ public class Library
     }
 
     public void RegisterOneBorrower(String name){
-        if(chcek(name) == null){
+        if(CheckBorrower(name) == null){
             newBorrower(name);
             add(borrower);
         }
