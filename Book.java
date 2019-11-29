@@ -11,7 +11,7 @@ public class Book
     private static int catalogueNumber;
     private String title;
     private String author;
-    //TreeSet tree = new TreeSet(); // 
+    TreeSet tree = new TreeSet(); // 
     public TreeSet<Loan> LoanInformation;
     
 
@@ -46,7 +46,7 @@ public class Book
 
     public Loan checkBook()
     {
-        if (this.catalogueNumber == this.catalogueNumber)
+        if (this.catalogueNumber == tree.catalogueNumber)
         {
             return loan;
         }
