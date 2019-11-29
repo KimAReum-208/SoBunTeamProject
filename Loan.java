@@ -11,6 +11,8 @@ public class Loan
 {
     private LocalDate loanDate;
     private LocalDate returnDate;
+    public Book book;
+    public Borrower borrower;
     
     public Loan(Book book,Borrower borrower,LocalDate loanDate ,LocalDate returnDate){
        this.book = book;
