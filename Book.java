@@ -12,6 +12,7 @@ public class Book
     private String author;
     //TreeSet tree = new TreeSet(); // 
     public TreeSet<Loan> LoanInformation;
+    
 
     public Book(int catalogueNumber,String title,String author)
     {

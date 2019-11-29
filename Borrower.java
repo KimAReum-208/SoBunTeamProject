@@ -8,6 +8,7 @@ import java.util.*;
 public class Borrower
 {
     private String name;
+    
     public ArrayList<Loan> LoanInformation;
     Set Borrower = new HashSet();
     public Borrower(String name){
