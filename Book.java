@@ -1,6 +1,6 @@
 import java.util.*;
 /**
- * Write a description of class Library here.
+ * 
  *
  * @author (your name)
  * @version (a version number or a date)
@@ -12,6 +12,7 @@ public class Book
     private String author;
     //TreeSet tree = new TreeSet(); // 
     public TreeSet<Loan> LoanInformation;
+    
 
     public Book(int catalogueNumber,String title,String author)
     {
@@ -58,7 +59,7 @@ public class Book
 
     public void connect(Loan loan)
     {
-        Book loan = this;
+        Loan loan = this;
     }
 
     public void display()
