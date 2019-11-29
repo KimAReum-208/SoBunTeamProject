@@ -30,7 +30,7 @@ public class Borrower
         }
         else 
         {
-            System.out.println("ì´ìš©ì ì •ë³´ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+            System.out.println("?´?š©? ? •ë³´ë?? ì°¾ì„ ?ˆ˜ ?—†?Šµ?‹ˆ?‹¤.");
         }
     }
    
