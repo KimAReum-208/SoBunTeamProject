@@ -56,9 +56,9 @@ public class Book
         Loan loan = null;
     }
 
-    public void connect(Loan laon)
+    public void connect(Loan loan)
     {
-        Loan laon = this;
+        Book loan = this;
     }
 
     public void display()
