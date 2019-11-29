@@ -1,9 +1,10 @@
 import java.util.*;
 /**
- * 
+ * Book class
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (2017315002 Kim Areum , 218315021 Bang Daeho,
+ *          2018315051 Yamamoto Yoshika, 2018315003 Choi Sewon)
+ * @version (2019.11.29)
  */
 public class Book
 {
@@ -39,7 +40,7 @@ public class Book
         }
         else 
         {
-            System.out.println("책이 존재 하지 않습니다.");
+            System.out.println("I can't find the book.");
         }
     }
 

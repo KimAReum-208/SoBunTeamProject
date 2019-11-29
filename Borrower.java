@@ -1,9 +1,10 @@
 import java.util.*;
 /**
- * Write a description of class Library here.
+ * Borrower class
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (2017315002 Kim Areum , 218315021 Bang Daeho,
+ *          2018315051 Yamamoto Yoshika, 2018315003 Choi Sewon)
+ * @version (2019.11.29)
  */
 public class Borrower
 {
@@ -30,7 +31,7 @@ public class Borrower
         }
         else 
         {
-            System.out.println("?ù¥?ö©?ûê ?†ïÎ≥¥Î?? Ï∞æÏùÑ ?àò ?óÜ?äµ?ãà?ã§.");
+            System.out.println("User not found");
         }
     }
    

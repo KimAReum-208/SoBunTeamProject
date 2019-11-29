@@ -1,9 +1,10 @@
 import java.util.*;
 /**
- * Write a description of class Library here.
+ * Library class
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (2017315002 Kim Areum , 218315021 Bang Daeho,
+ *          2018315051 Yamamoto Yoshika, 2018315003 Choi Sewon)
+ * @version (2019.11.29)
  */
 public class Library
 {
@@ -28,11 +29,11 @@ public class Library
             boolean result = registeredBook.add(book);
             if (result)
             {
-                System.out.println("���� �����߽��ϴ�");
+                System.out.println("Registration succeeded");
             }
             else 
             {
-                System.out.println("���� �����߽��ϴ�.");
+                System.out.println("Registration failed");
             }
         }
     }
