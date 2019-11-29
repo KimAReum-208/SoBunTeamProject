@@ -31,4 +31,11 @@ public class Loan
         book.offConnect(this);
         borrower.offConnect(this);
     }
+    
+   public Loan(Book book,Borrower borrower,Data loanData ,Data returnData){
+       this.book = book;
+       this.borrower = borrower;
+       this.loanData = loanData;
+       this.returnData = returnData;
+    }
 }
