@@ -53,7 +53,7 @@ public class Book
 
     }
 
-    public void offConnect()
+    public void offConnect(Loan loan)
     {
         Loan loan = null;
     }
