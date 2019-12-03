@@ -13,7 +13,6 @@ public class Book
     private String author;
     TreeSet tree = new TreeSet(); // 
     public TreeSet<Loan> LoanInformation;
-    
 
     public Book(int catalogueNumber,String title,String author)
     {
@@ -89,12 +88,24 @@ public class Book
             tree.add(this);
         }
     }
-    
+
     public void getBestBook(){
         sortCollection();
     }
-    
+
     public void sortCollection(){
+
+    }
+    
+    public void CountBookReset(){
+        while(registeredBook.size()){
+            CountReset();
+        }
+    }
+    
+    public void CountReset(){
         
     }
+    
+
 }

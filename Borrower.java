@@ -56,4 +56,22 @@ public class Borrower
     public String toString(){
         return this.name;
     }
+    
+    public void getKingOfReading(){
+        sortCollection();
+    }
+    
+    public void sortCollection(){
+        
+    }
+    
+    public void CountBorrowerReset(){
+        while(User.size()){
+            CountReset();
+        }
+    }
+    
+    public void CountReset(){
+        
+    }
 }

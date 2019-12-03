@@ -13,6 +13,10 @@ public class Library
     private TreeSet<Book> registeredBook;
     private ArrayList<Loan> LoanInformation;
     
+    public Library(){
+        this.name = name;
+    }
+    
     public void ReturnOneBook(int catalogueNumber){
         if((findBook(catalogueNumber)) != null){
             Book book = checkBook();
@@ -56,11 +60,11 @@ public class Library
         }
     }
 
-    public book DisplayBooksOnLoan(){
+    public Book DisplayBooksOnLoan(){
         display();
     }
 
-    public book DisplayBooksForLoan(){
+    public Book DisplayBooksForLoan(){
         display();
     }
 
@@ -70,5 +74,18 @@ public class Library
     
     public void searchBestBook(){
         getBestBook();   
+    }
+    
+    public void DisplayKingOfReading(){
+        getKingOfReading();
+    }
+    
+    public void resetCount(){
+        CountBookReset();
+        CountBorrowerReset();
+    }
+    
+    public void DisplayBestBook(){
+        getBestBook();
     }
 }
