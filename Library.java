@@ -60,22 +60,22 @@ public class Library
         }
     }
 
-<<<<<<< HEAD
+
     public book DisplayBooksOnLoan(){
         displayBooksOnLoan();
-=======
+    }
     public Book DisplayBooksOnLoan(){
         display();
->>>>>>> a1e576d00fc493d28dcad2ab8de34a14bd09c975
+
     }
 
-<<<<<<< HEAD
+
     public book DisplayBooksForLoan(){
         displayBooksForLoan();
-=======
+    }
     public Book DisplayBooksForLoan(){
         display();
->>>>>>> a1e576d00fc493d28dcad2ab8de34a14bd09c975
+
     }
 
     public String toString(){
