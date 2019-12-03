@@ -40,7 +40,7 @@ public class Library
 
     public void RegisterOneBorrower(String name){
         if(CheckBorrower(name) == null){
-            newBorrower(name);
+            Borrower borrower = new Borrower(name);
             add(borrower);
         }
     }
