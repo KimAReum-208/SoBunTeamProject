@@ -57,11 +57,11 @@ public class Library
     }
 
     public book DisplayBooksOnLoan(){
-        display();
+        displayBooksOnLoan();
     }
 
     public book DisplayBooksForLoan(){
-        display();
+        displayBooksForLoan();
     }
 
     public String toString(){

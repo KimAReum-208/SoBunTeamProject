@@ -63,13 +63,19 @@ public class Book
         Loan loan = this;
     }
 
-    public void display()
+    public void displayBooksForLoan()
     {
         while(tree.hasNext())
         {
-            if(Loan.BorrowerdBook != null)
+            if (this.LoanInformation == null)
                 System.out.println(tree);
-            else if (Loan.borrower == null)
+        }
+    }
+    public void displayBooksOnLoan()
+    {
+        while(tree.hasNext())
+        {
+            if(this.LoanInformation != null)
                 System.out.println(tree);
         }
     }
