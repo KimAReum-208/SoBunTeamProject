@@ -24,6 +24,10 @@ public class Borrower
         {
             System.out.println("ok");
         }
+        else
+        {
+            System.out.println("Users already exists.");
+        }
     }
     
     public Borrower getBorrower(String name){
