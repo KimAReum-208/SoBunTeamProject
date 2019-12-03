@@ -22,11 +22,11 @@ public class Library
         }
     }
 
-    public void RegisterOneBook(String name){
+    public void RegisterOneBook(int catalogueNumber, String title, String author){
         if( CheckBook(catalogueNumber))
         {
             Book book = new Book(catalogueNumber, title, author);
-            boolean result = registeredBook.add(book);
+            boolean result = add(book);
             if (result)
             {
                 System.out.println("Registration succeeded");
