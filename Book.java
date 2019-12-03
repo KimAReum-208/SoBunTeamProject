@@ -81,12 +81,12 @@ public class Book
 
     public Boolean CheckBook(int catalogueNumber)
     {
-        if (this.catalogueNumber != catalogueNumber)
+        if (tree.contains(this))
         {
-            return false;
+            System.out.println("already exists.");
         }
         else{
-            return true;
+            tree.add(this);
         }
     }
 }
