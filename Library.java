@@ -50,8 +50,9 @@ public class Library
         Loan checkBook = CheckBook(catalogueNumber);
         Borrower borrower = getBorrower(name);
         if(book != null && borrower != null){
-            newLoan(book, borrower);
+            Loan loan = Loan(book, borrower, loanDate, returnDate);
             connent(book, borrower);
+            System.out.println(loan);
         }
     }
 
