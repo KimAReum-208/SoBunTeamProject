@@ -89,4 +89,12 @@ public class Book
             tree.add(this);
         }
     }
+    
+    public void getBestBook(){
+        sortCollection();
+    }
+    
+    public void sortCollection(){
+        
+    }
 }

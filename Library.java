@@ -67,4 +67,8 @@ public class Library
     public String toString(){
         this.name = name;
     }
+    
+    public void searchBestBook(){
+        getBestBook();   
+    }
 }
