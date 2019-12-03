@@ -26,10 +26,10 @@ public class Library
         }
     }
 
-    public void RegisterOneBook(int catalogueNumber, String title, String author){
+    public void RegisterOneBook(int catalogueNumber, String title, String author, int count){
         if(CheckBook(catalogueNumber))
         {
-            Book book = new Book(catalogueNumber, title, author);
+            Book book = new Book(catalogueNumber, title, author, count);
             boolean result = add(book);
             if (result)
             {
@@ -42,9 +42,9 @@ public class Library
         }
     }
 
-    public void RegisterOneBorrower(String name){
+    public void RegisterOneBorrower(String name, int count){
         if(CheckBorrower(name) == null){
-            Borrower borrower = new Borrower(name);
+            Borrower borrower = new Borrower(name, count);
             add(borrower);
         }
     }
