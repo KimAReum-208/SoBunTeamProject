@@ -10,11 +10,13 @@ import java.util.*;
 public class Borrower
 {
     private String name;
+    private int count;
     public ArrayList<Loan> LoanInformation;
     Set Borrower = new HashSet();
     
-    public Borrower(String name){
+    public Borrower(String name, int count){
         this.name = name;
+        this.count = 0;
         LoanInformation = new ArrayList<Loan>();
     }
     
@@ -55,5 +57,23 @@ public class Borrower
     
     public String toString(){
         return this.name;
+    }
+    
+    public void getKingOfReading(){
+        sortCollection();
+    }
+    
+    public void sortCollection(){
+        
+    }
+    
+    public void CountBorrowerReset(){
+        while(User.size()){
+            CountReset();
+        }
+    }
+    
+    public void CountReset(){
+        
     }
 }

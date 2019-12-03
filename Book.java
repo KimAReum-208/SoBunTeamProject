@@ -9,17 +9,18 @@ import java.util.*;
 public class Book
 {
     private static int catalogueNumber;
+    private int count;
     private String title;
     private String author;
     TreeSet tree = new TreeSet(); // 
     public TreeSet<Loan> LoanInformation;
-    
 
-    public Book(int catalogueNumber,String title,String author)
+    public Book(int catalogueNumber,String title,String author, int count)
     {
         this.catalogueNumber = catalogueNumber;
         this.title = title;
         this.author = author;
+        this.count = 0;
         LoanInformation = new TreeSet<Loan>();
     }
 
@@ -95,12 +96,24 @@ public class Book
             tree.add(this);
         }
     }
-    
+
     public void getBestBook(){
         sortCollection();
     }
-    
+
     public void sortCollection(){
+
+    }
+    
+    public void CountBookReset(){
+        while(registeredBook.size()){
+            CountReset();
+        }
+    }
+    
+    public void CountReset(){
         
     }
+    
+
 }

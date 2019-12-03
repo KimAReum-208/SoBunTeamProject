@@ -13,6 +13,10 @@ public class Library
     private TreeSet<Book> registeredBook;
     private ArrayList<Loan> LoanInformation;
     
+    public Library(){
+        this.name = name;
+    }
+    
     public void ReturnOneBook(int catalogueNumber){
         if((findBook(catalogueNumber)) != null){
             Book book = checkBook();
@@ -22,10 +26,10 @@ public class Library
         }
     }
 
-    public void RegisterOneBook(int catalogueNumber, String title, String author){
+    public void RegisterOneBook(int catalogueNumber, String title, String author, int count){
         if(CheckBook(catalogueNumber))
         {
-            Book book = new Book(catalogueNumber, title, author);
+            Book book = new Book(catalogueNumber, title, author, count);
             boolean result = add(book);
             if (result)
             {
@@ -38,9 +42,9 @@ public class Library
         }
     }
 
-    public void RegisterOneBorrower(String name){
+    public void RegisterOneBorrower(String name, int count){
         if(CheckBorrower(name) == null){
-            Borrower borrower = new Borrower(name);
+            Borrower borrower = new Borrower(name, count);
             add(borrower);
         }
     }
@@ -56,12 +60,22 @@ public class Library
         }
     }
 
+<<<<<<< HEAD
     public book DisplayBooksOnLoan(){
         displayBooksOnLoan();
+=======
+    public Book DisplayBooksOnLoan(){
+        display();
+>>>>>>> a1e576d00fc493d28dcad2ab8de34a14bd09c975
     }
 
+<<<<<<< HEAD
     public book DisplayBooksForLoan(){
         displayBooksForLoan();
+=======
+    public Book DisplayBooksForLoan(){
+        display();
+>>>>>>> a1e576d00fc493d28dcad2ab8de34a14bd09c975
     }
 
     public String toString(){
@@ -70,5 +84,18 @@ public class Library
     
     public void searchBestBook(){
         getBestBook();   
+    }
+    
+    public void DisplayKingOfReading(){
+        getKingOfReading();
+    }
+    
+    public void resetCount(){
+        CountBookReset();
+        CountBorrowerReset();
+    }
+    
+    public void DisplayBestBook(){
+        getBestBook();
     }
 }
