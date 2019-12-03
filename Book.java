@@ -79,11 +79,14 @@ public class Book
         return this.catalogueNumber + "," + this.title  + "," + this.author;
     }
 
-    public void CheckBook(int catalogueNumber)
+    public Boolean CheckBook(int catalogueNumber)
     {
         if (this.catalogueNumber != catalogueNumber)
         {
-            System.out.println("ok");
+            return false;
+        }
+        else{
+            return true;
         }
     }
 }

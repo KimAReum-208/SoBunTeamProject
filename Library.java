@@ -23,7 +23,7 @@ public class Library
     }
 
     public void RegisterOneBook(int catalogueNumber, String title, String author){
-        if( CheckBook(catalogueNumber))
+        if(CheckBook(catalogueNumber))
         {
             Book book = new Book(catalogueNumber, title, author);
             boolean result = add(book);
